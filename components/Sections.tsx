@@ -453,6 +453,12 @@ export function AboutSection() {
             <p className="text-[var(--muted)] text-sm md:text-base leading-loose mb-12 text-justify">
               {t('about.bio1')}
             </p>
+            <p className="text-[var(--muted)] text-sm md:text-base leading-loose mb-12 -mt-6">
+              {t('about.cv.prompt')}{' '}
+              <a href="/CV_Putri_Rahayu.pdf" target="_blank" rel="noopener noreferrer" className="text-[var(--foreground)] font-semibold underline underline-offset-4 hover:opacity-80 transition-opacity">
+                {t('about.cv.link')}
+              </a>.
+            </p>
 
             {/* Currently */}
             <div>

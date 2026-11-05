@@ -67,7 +67,7 @@ for (const f of files) {
 }
 
 // 4. Kata sisa Template 1 (apoteker/farmasi/Hafizah)
-const banned = /hafizah|nurfadillah|apoteker|apotek|farmasi|pharm|kariadi|kimia farma|bio ?farma|kemenkes|BEM UI|Universitas Indonesia|resep|ARV|cengkareng|illona|parahita|gadjah|bandara|airport|kamadipa|mettrip|karimunjawa|samosir|ranti|apriliani|wilmar|himabisnis|nurliana|pardede|pertamina|BRIN|teknik kimia|chemical|ridia|ramadinah|agribis|sebelas maret|KOMIKA|annisa|ninis|jember|\bners\b|keperawatan|perawat|nurse|nursing|BTCLS|soebandi|radjiman|nogosari|PSTW|citra husada|UMJ|CV_[A-Za-z_]+\.pdf|utsman|hafidz|oesman|thursina|muktamar|blitar|duta catering|khazanah|forskimal|lombok|futsal|toafl|daffodils|lisanularab|creativepreneur|fiqih|\barab|mataram|hurairah|linkedin/i
+const banned = /hafizah|nurfadillah|apoteker|apotek|farmasi|pharm|kariadi|kimia farma|bio ?farma|kemenkes|BEM UI|Universitas Indonesia|resep|ARV|cengkareng|illona|parahita|gadjah|bandara|airport|kamadipa|mettrip|karimunjawa|samosir|ranti|apriliani|wilmar|himabisnis|nurliana|pardede|pertamina|BRIN|teknik kimia|chemical|ridia|ramadinah|agribis|sebelas maret|KOMIKA|annisa|ninis|jember|\bners\b|keperawatan|perawat|nurse|nursing|BTCLS|soebandi|radjiman|nogosari|PSTW|citra husada|UMJ|CV_(?!Putri_Rahayu)[A-Za-z_]+\.pdf|utsman|hafidz|oesman|thursina|muktamar|blitar|duta catering|khazanah|forskimal|lombok|futsal|toafl|daffodils|lisanularab|creativepreneur|fiqih|\barab|mataram|hurairah|linkedin/i
 for (const f of files) {
   const src = readFileSync(f, 'utf8')
   const lines = src.split('\n')
