@@ -32,7 +32,7 @@ export default function ProjectShowcase() {
           {works.map((w) => (
             <article
               key={w.id}
-              className="group break-inside-avoid mb-6 rounded-3xl bg-[var(--card-bg)] border border-[var(--card-border)] overflow-hidden shadow-sm hover:shadow-xl hover:border-emerald-500/40 hover:-translate-y-1 transition-all duration-300"
+              className="group break-inside-avoid mb-6 rounded-3xl bg-[var(--card-bg)] border border-[var(--card-border)] overflow-hidden shadow-sm hover:shadow-xl hover:border-pink-500/40 hover:-translate-y-1 transition-all duration-300"
             >
               {w.image ? (
                 <a href={w.image} target="_blank" rel="noopener noreferrer" className="block overflow-hidden bg-[var(--background)]">
@@ -43,7 +43,7 @@ export default function ProjectShowcase() {
                   />
                 </a>
               ) : (
-                <div className="flex items-center justify-center h-32 bg-gradient-to-br from-emerald-500/15 via-[var(--card-bg)] to-[var(--card-bg)] text-emerald-500">
+                <div className="flex items-center justify-center h-32 bg-gradient-to-br from-pink-500/15 via-[var(--card-bg)] to-[var(--card-bg)] text-pink-500">
                   <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
                     <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
@@ -51,7 +51,7 @@ export default function ProjectShowcase() {
                 </div>
               )}
               <div className="p-5 sm:p-6">
-                <p className="text-[10px] tracking-[0.2em] uppercase text-emerald-500 font-semibold mb-2">{t(`proj.${w.id}.cat`)}</p>
+                <p className="text-[10px] tracking-[0.2em] uppercase text-pink-500 font-semibold mb-2">{t(`proj.${w.id}.cat`)}</p>
                 <h3 className="text-lg font-bold leading-snug mb-2">{t(`proj.${w.id}.title`)}</h3>
                 <p className="text-xs sm:text-sm text-[var(--muted)] leading-relaxed mb-4">{t(`proj.${w.id}.desc`)}</p>
                 {w.image && (
